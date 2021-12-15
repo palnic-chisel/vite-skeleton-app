@@ -22,6 +22,8 @@ ChartJS.register(
 
 export const options = {
   responsive: true,
+  maintainAspectRatio: false,
+  aspectRatio: 1,
   plugins: {
     legend: {
       position: 'top' as const,
@@ -51,8 +53,6 @@ export const data = {
   ],
 };
 
-const BarChart = function () {
-  return <Bar options={options} data={data} style={{ height: '100%' }} />;
-};
+const BarChart = () => <Bar options={options} data={data} />;
 
 export default BarChart;

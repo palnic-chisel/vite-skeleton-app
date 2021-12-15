@@ -206,7 +206,7 @@ export default function Layout({
       </Drawer>
       <Box className={classes.page}>
         <div className="App" id="subito" style={{ display: 'flex', flexFlow: 'column', height: '100%' }}>
-          <div style={{ height: '64px' }} />
+          <div style={{ minHeight: '64px' }} />
           <div style={{ flex: '1 1 auto' }}>
             {children}
           </div>

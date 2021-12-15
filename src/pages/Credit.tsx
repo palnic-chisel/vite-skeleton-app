@@ -9,7 +9,7 @@ type Props = {
   columns: number,
 }
 
-const Equity = ({ visible, columns }: Props) => (
+const Credit = ({ visible, columns }: Props) => (
   <Grid
     item
     xs={columns}
@@ -26,4 +26,4 @@ const Equity = ({ visible, columns }: Props) => (
   </Grid>
 );
 
-export default Equity;
+export default Credit;

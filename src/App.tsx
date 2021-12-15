@@ -19,7 +19,7 @@ import SamplePageOne from './pages/SamplePageOne';
 import SamplePageThree from './pages/SamplePageThree';
 import ErrorPage from './pages/ErrorPage';
 
-const App = function () {
+const App = () => {
   const state = useSelector((state: RootState) => state);
   const dispatch = useDispatch();
 
@@ -31,14 +31,13 @@ const App = function () {
     <ThemeProvider theme={darkTheme}>
       <Router>
         <Layout>
-
           <Routes>
             <Route path="/sample-page-one" element={<SamplePageOne />} />
             <Route path="/sample-page-two" element={<SamplePageTwo />} />
             <Route path="/sample-page-three" element={<SamplePageThree />} />
+            <Route path="*" element={<ErrorPage />} />
           </Routes>
         </Layout>
-
       </Router>
       {/* <Equity /> */}
     </ThemeProvider>
